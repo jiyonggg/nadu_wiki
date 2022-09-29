@@ -4,16 +4,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>나두위키</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">나두위키</a>
-            <a class="navbar-brand" href="#">최근 변경</a>
-            <a class="navbar-brand" href="#">특수 기능</a>
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="#"><i class="bi-compass"></i>최근 변경</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="bi-chat-left-dots"></i>최근 토론</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="bi-box"></i>특수 기능</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="bi-clipboard-fill"></i>게시판</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi-exclamation-circle-fill"></i>작성이 필요한 문서</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi-link-45deg"></i>고립된 문서</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi-question"></i>분류가 필요한 문서</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi-pause-fill"></i>편집된 지 오래된 문서</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi-pencil-fill"></i>내용이 짧은 문서</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi-heart-fill"></i>내용이 긴 문서</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi-heartbreak-fill"></i>차단 내역</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi-shuffle"></i>RandomPage</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi-cloud-arrow-up-fill"></i>파일 업로드</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi-tag-fill"></i>라이선스</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <button><i class="bi-shuffle"s></i></button>
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button><i class="bi-search"></i></button>
+                <button><i class="bi-arrow-right"></i></button>
+            </form>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#"><i class="bi-person-fill"></i></a></li>    
+            </ul>
         </div>
     </nav>
+    <header><h1>Hello World!</h1></header>
+    <article></article>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>

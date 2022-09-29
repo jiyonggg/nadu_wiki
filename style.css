@@ -1,0 +1,19 @@
+nav {
+    background-color: #008275;
+}
+.nav-link {
+    color: white;
+}
+.navbar-brand {
+    color: white;
+}
+body {
+    background-color: #efefef;
+}
+form.d-flex > button {
+    border: none;
+    background-color: white;
+}
+form.d-flex > input.form-control {
+    border-radius: 0%;
+}
