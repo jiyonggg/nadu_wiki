@@ -44,7 +44,10 @@ form.d-flex > input.form-control {
 article.container {
     background: white;
     padding: 1.5em;
-    max-width: 1300px;
+    max-width: 100%
+}
+article {
+    float: left;
 }
 a {
     text-decoration: none;
@@ -59,8 +62,10 @@ a:hover {
     border-radius: 0.3em;
 }
 footer {
+    clear: both;
     border-top: 1px solid #ccc;
     background-color: white;
+    width: 100%;
 }
 footer div a {
     color: unset;
@@ -122,12 +127,6 @@ footer > div:first-child {
 .d-flex > button:hover {
     background-color: #e6e6e6;
 }
-@media (min-width: 1300px) {
-    article.container {
-        margin-left: calc((100% - 1300px) / 2);
-        margin-right: calc((100% - 1300px) / 2);
-    }
-}
 .dropdown-divider {
     border-top-width: 0.5px;
 }
@@ -143,4 +142,30 @@ a.dropdown-item:focus {
 }
 .text-muted:hover {
     background-color: white;
+}
+@media (min-width: 1300px) {
+    article.container {
+        margin-left: calc((100% - 1300px) / 2);
+    }
+}
+@media (max-width: 1299px) {
+    article.container {
+        margin-left: 0px;
+    }
+}
+@media (min-width: 1020px) {
+    article.container {
+        display: inline-block;
+        width: calc(100% - 340px);
+        margin-right: 15px;
+    }
+    aside {
+        display: inline-block;
+        margin-top: 15px;
+        margin-right: 15px;
+        width: 310px;
+    }
+}
+@media (max-width: 672px) {
+    nav > 
 }
