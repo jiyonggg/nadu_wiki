@@ -18,23 +18,39 @@ nav {
 body {
     background-color: #efefef;
 }
+form.d-flex {
+    order: 1;
+    width: 100%;
+    border-bottom: 1px solid #ced4da 
+}
 form.d-flex > button {
     border: none;
     background-color: white;
 }
 form.d-flex > input.form-control {
     border-radius: 0%;
+    color: #55595c;
 }
 .navbar {
     padding-left: calc((100% - 1300px) / 2);
     padding-right: calc((100% - 1300px) / 2);
 }
-.navbar > .container-fluid {
-    padding-left: 2em;
-    padding-right: 2em;
-}
 .navbar-nav {
     gap: 0.3em;
+}
+.navbar>.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    flex-wrap: wrap;
+}
+nav>.container-fluid>.navbar-nav:first-of-type>.nav-item:nth-of-type(-n+2) {
+    width: 45px;
+}
+nav>.container-fluid>.navbar-nav:first-of-type>.nav-item:nth-of-type(3) {
+    width: 65px;
+}
+.navbar-nav > .nav-item > .nav-link > i.bi-box {
+    margin-right: 0.3em;
 }
 #header {
     color: black;
@@ -92,9 +108,6 @@ footer div a i {
     padding-left: 0.6em;
     padding-right: 0.6em;
 }
-.navbar-nav > .nav-item > .nav-link > i{
-    margin-right: 0.6em;
-}
 .dropdown-item > i {
     margin-right: 0.6em;
 }
@@ -108,6 +121,7 @@ footer div a i {
 }
 .navbar-nav:last-of-type {
     margin-left: 0.6em;
+    margin-right: 1em;
 }
 .form-control:focus {
     border-color: #ced4da;
@@ -154,6 +168,33 @@ a.dropdown-item:focus {
     }
 }
 @media (min-width: 1020px) {
+    .navbar>.container-fluid {
+        padding-left: calc(1.5rem * 0.5);
+        padding-right: calc(1.5rem * 0.5);
+    }
+    .navbar-nav > .nav-item > .nav-link > i{
+        margin-right: 0.6em;
+    }
+    .navbar-nav > .nav-item > .nav-link > i.bi-box {
+        margin-right: 0.6em;
+    }
+    nav>.container-fluid>.navbar-nav:first-of-type>.nav-item:nth-of-type(-n+2) {
+        width: auto;
+    }
+    nav>.container-fluid>.navbar-nav:first-of-type>.nav-item:nth-of-type(3) {
+        width: auto;
+    }
+    nav>div>form.d-flex {
+        order: 0;
+        width: auto;
+        border-bottom: none;
+    }
+    .navbar-nav:last-of-type {
+        margin-right: unset;
+    }
+    .dropdown > .nav-link > i.bi-person-fill {
+        margin-right: unset;
+    }
     article.container {
         display: inline-block;
         width: calc(100% - 340px);
@@ -167,5 +208,7 @@ a.dropdown-item:focus {
     }
 }
 @media (max-width: 672px) {
-    nav > 
+    .nav-menu-label {
+        display: none;
+    }
 }
