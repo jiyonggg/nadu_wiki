@@ -6,17 +6,7 @@
 function changeTheme() {
     const bodyElem = document.body;
 
-    switch (bodyElem.className) {
-        case 'light':
-            bodyElem.className = 'dark';
-            break;
-        case 'dark':
-            bodyElem.className = 'light';
-            break;
-        default:
-            bodyElem.className = 'dark';
-            break;
-    }
+    bodyElem.classList.toggle('dark');
 }
 
 console.log('Hello World!');

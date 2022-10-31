@@ -212,3 +212,18 @@ a.dropdown-item:focus {
         display: none;
     }
 }
+@media (min-width: 673px) {
+    nav>.container-fluid>.navbar-nav:first-of-type>.nav-item:nth-of-type(-n+2) {
+        width: auto;
+    }
+}
+@media (max-width: 1020px) {
+    .navbar-brand {
+        margin-left: 12px!important
+    }
+    aside > .container {
+        margin: 0;
+        padding: 1.5em;
+        width: 100%;
+    }
+}
