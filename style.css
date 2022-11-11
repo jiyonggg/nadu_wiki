@@ -65,11 +65,27 @@ article.container {
 article {
     float: left;
 }
+#control .btn {
+    border-color: #ccc;
+    border-radius: 0;
+    padding: .3rem .8rem;
+}
+#control .btn:hover {
+    background-color: #e6e6e6;
+    color: unset;
+}
+#control .btn:active {
+    background-color: #e6e6e6;
+    color: unset;
+}
 a {
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
+}
+#last-edit-date {
+    text-align: end;
 }
 #category {
     padding-left: 0.3em;
@@ -200,11 +216,8 @@ a.dropdown-item:focus {
         width: calc(100% - 340px);
         margin-right: 15px;
     }
-    aside {
-        display: inline-block;
-        margin-top: 15px;
-        margin-right: 15px;
-        width: 310px;
+    article>#control {
+        float: right;
     }
 }
 @media (max-width: 672px) {
@@ -221,9 +234,7 @@ a.dropdown-item:focus {
     .navbar-brand {
         margin-left: 12px!important
     }
-    aside > .container {
-        margin: 0;
-        padding: 1.5em;
-        width: 100%;
+    #control {
+        display: none;
     }
 }
