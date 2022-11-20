@@ -52,6 +52,33 @@ nav>.container-fluid>.navbar-nav:first-of-type>.nav-item:nth-of-type(3) {
 .navbar-nav > .nav-item > .nav-link > i.bi-box {
     margin-right: 0.3em;
 }
+.control_navs {
+    padding: 0;
+    text-align: end;
+    background-color: white;
+    border-bottom: 1px solid #ced4da;
+}
+#control_nav {
+    background-color: white;
+}
+#control_nav > button {
+    border-color: #ccc;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 0;
+    padding: .3rem .8rem;
+}
+#control_nav button:nth-child(n + 2) {
+    border-left: none;
+}
+#control_nav > button:hover {
+    background-color: #e6e6e6;
+    color: unset;
+}
+#control_nav > button:active {
+    background-color: #e6e6e6;
+    color: unset;
+}
 #header {
     color: black;
     font-size: 2em;
@@ -69,6 +96,9 @@ article {
     border-color: #ccc;
     border-radius: 0;
     padding: .3rem .8rem;
+}
+#control .btn:nth-child(n + 2) {
+    border-left: none;
 }
 #control .btn:hover {
     background-color: #e6e6e6;
@@ -210,6 +240,9 @@ a.dropdown-item:focus {
     }
     .dropdown > .nav-link > i.bi-person-fill {
         margin-right: unset;
+    }
+    #control_nav {
+        display: none;
     }
     article.container {
         display: inline-block;
